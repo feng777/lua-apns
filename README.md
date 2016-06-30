@@ -3,7 +3,7 @@ Lua binding for libcapns . Now it is possible to work with Apple Push Notificati
 
 First of all, install **libcapn** library https://github.com/adobkin/libcapn
 
-Then build `apns.c` something like this:
+Second step is to build `apns.c` like this:
 
 `gcc -shared -fpic -O -I. -I/path/to/luajitheaders -L. -L/path/to/luajithlib -L/usr/lib/capn -lcapn apns.c -o apns.so `
 
