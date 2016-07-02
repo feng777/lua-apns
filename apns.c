@@ -114,7 +114,7 @@ static int iapns(lua_State *L) {
     apn_payload_set_badge(payload, badges_count); // Icon badge
     apn_payload_set_body(payload, text);  // Notification text
     apn_payload_set_expiry(payload, time_now + seconds); // Expires
-
+    apn_payload_set_sound(payload, "default");
     apn_payload_set_priority(payload, APN_NOTIFICATION_PRIORITY_HIGH);  // Notification priority
 
     apn_array_t *tokens = apn_array_init(2, NULL, NULL);
